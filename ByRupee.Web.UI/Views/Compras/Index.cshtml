@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Cadastro.Dominio.Compra>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de Compras </h2>
+<br />
+<p>
+    <a id="btnCadastraCompra" href="~/Compras/Create" class="btn btn-primary btn-lg btn-block">Add Nova Compra</a>
+</p>
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DataCompra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayName("Loja")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataCompra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Loja.Nome)
+        </td>
+       
+        <td>
+            <a href="/Compras/ListaDeCompra/@item.Id" title="Lista de Compra" id="btnListaDeCompra" class="btn btn-success btn-xs">Lista de Compra</a>
+            <a href="/Compras/Edit/@item.Id" title="Editar"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+            <a href="/Compras/Details/@item.Id" title="Detalhes"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span></a>
+            <a href="/Compras/Delete/@item.Id" title="Excluir"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+        </td>
+    </tr>
+}
+
+     @*@Html.Action("FiltroLojas", Model)*@
+
+</table>
+
+<!--<div class="modal fade" id="ModalCompra" role="dialog">
+    <div class="modal-dialog">
+
+         Meu MODAL
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Lista de Compra</h4>
+            </div>
+            <div class="modal-body">
+
+                <table class="table">
+
+
+                  
+
+                </table>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+
+    </div>
+</div>-->
+    

@@ -1,0 +1,51 @@
+﻿@model Cadastro.Dominio.Compra
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes Compras</h2>
+
+<div>
+    <h4>Compra</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DataCompra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataCompra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Id da Loja")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LojaId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <a href="/Compras/Edit/@Model.Id" title="Editar"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+    |
+    @Html.ActionLink("Voltar", "Index")
+</p>

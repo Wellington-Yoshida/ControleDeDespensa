@@ -1,0 +1,15 @@
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\bin\Debug\Cadastro.ORM.dll.config
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\bin\Debug\Cadastro.ORM.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\bin\Debug\Cadastro.ORM.pdb
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\bin\Debug\Cadastro.Dominio.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\bin\Debug\DotNet.Highcharts.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\bin\Debug\Cadastro.Dominio.pdb
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\obj\Debug\Cadastro.ORM.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\obj\Debug\Cadastro.ORM.Migrations.CompraIdemProduto.resources
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\obj\Debug\Cadastro.ORM.csproj.GenerateResource.Cache
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\obj\Debug\Cadastro.ORM.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.ORM\obj\Debug\Cadastro.ORM.pdb

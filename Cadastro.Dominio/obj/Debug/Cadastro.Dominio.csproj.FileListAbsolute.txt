@@ -1,0 +1,5 @@
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.Dominio\bin\Debug\Cadastro.Dominio.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.Dominio\bin\Debug\Cadastro.Dominio.pdb
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.Dominio\obj\Debug\Cadastro.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.Dominio\obj\Debug\Cadastro.Dominio.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.Dominio\obj\Debug\Cadastro.Dominio.pdb

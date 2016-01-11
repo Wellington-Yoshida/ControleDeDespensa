@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Cadastro.Dominio.Compra>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataCompra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Loja.Nome)
+        </td>
+        <td>
+            <a href="/Compras/Edit/@item.Id" title="Editar"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+            <a href="/Compras/Details/@item.Id" title="Detalhes"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span></a>
+            <a href="/Compras/Delete/@item.Id" title="Excluir"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+        </td>
+    </tr>
+}

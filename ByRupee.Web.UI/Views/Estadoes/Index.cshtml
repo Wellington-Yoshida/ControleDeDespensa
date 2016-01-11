@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Cadastro.Dominio.Estado>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de Estados</h2>
+
+<p>
+    @Html.ActionLink("Add Estados", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.EstadoId }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.EstadoId }) |
+            @Html.ActionLink("Deletar", "Delete", new { id=item.EstadoId })
+        </td>
+    </tr>
+}
+
+</table>

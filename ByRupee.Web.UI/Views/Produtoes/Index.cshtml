@@ -1,0 +1,137 @@
+﻿@model IEnumerable<Cadastro.Dominio.Produto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de Produtos</h2>
+<br />
+<p>
+    <a id="btnCadastraProduto" href="~/Produtoes/Create" class="btn btn-warning btn-lg btn-block">Add Novo Produto</a>
+</p>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Meu MODAL-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Produtos quase acabando!</h4>
+            </div>
+            <div class="modal-body">
+               
+                <table class="table">                   
+              
+                
+                    @foreach (var item in Model)
+                    {
+                        if (item.QuantidadeDoItem == 1)
+                        {
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.DataValidade)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Marca)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.QuantidadeDoItem)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Nome)
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Compra")
+                                </th>
+
+                                <th></th>
+                            </tr>
+                        
+                       
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DataValidade)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Marca)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.QuantidadeDoItem)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Nome)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Compra.Nome)
+                                </td>
+                                <td>
+                                    <a href="/Produtoes/Edit/@item.Id" title="Editar"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                                    <a href="/Produtoes/Details/@item.Id" title="Detalhes"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span></a>
+                                    <a href="/Produtoes/Delete/@item.Id" title="Excluir"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                                </td>
+                            </tr>
+                        }
+
+                    }
+                
+                </table>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DataValidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Marca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuantidadeDoItem)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayName("Compra")
+        </th>
+       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataValidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Marca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuantidadeDoItem)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Compra.Nome)
+        </td>
+        
+        <td>
+            <a href="/Produtoes/Edit/@item.Id" title="Editar"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+            <a href="/Produtoes/Details/@item.Id" title="Detalhes"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span></a>
+            <a href="/Produtoes/Delete/@item.Id" title="Excluir"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+        </td>
+    </tr>
+}
+
+</table>

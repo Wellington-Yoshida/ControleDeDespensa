@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByRupee", "ByRupee\ByRupee.csproj", "{B0B69384-6B6E-462B-A91A-C709A6617EF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadastro.Dominio", "Cadastro.Dominio\Cadastro.Dominio.csproj", "{2B434D2A-CD67-4A40-9754-1CBE441FC562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadastro.ORM", "Cadastro.ORM\Cadastro.ORM.csproj", "{04FD3D01-D02E-4167-B2CC-2A96E776A21D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByRupee.Web.UI", "ByRupee.Web.UI\ByRupee.Web.UI.csproj", "{8CFA8053-7014-4089-BC68-97606B290107}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Codastro.BO", "Codastro.BO", "{99D43C1D-5774-40AD-8131-EBD27829B44F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadastro.BO", "Cadastro.BO\Cadastro.BO.csproj", "{5DA85E4D-5BFB-4452-945B-5B41B7EF2A82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teste", "Teste", "{1BCABBF6-96D8-4E96-92A1-B89A6A90AF38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByRupee.Test", "ByRupee.Test\ByRupee.Test.csproj", "{E69BCC84-8A3C-4713-8BB0-1E077D5539BC}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://trainee2015grupo5.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ByRupee.Test\\ByRupee.Test.csproj
+		SccProjectTopLevelParentUniqueName1 = Grupo5.sln
+		SccProjectName1 = ByRupee.Test
+		SccLocalPath1 = ByRupee.Test
+		SccProjectUniqueName2 = ByRupee.Web.UI\\ByRupee.Web.UI.csproj
+		SccProjectName2 = ByRupee.Web.UI
+		SccLocalPath2 = ByRupee.Web.UI
+		SccProjectUniqueName3 = ByRupee\\ByRupee.csproj
+		SccProjectName3 = ByRupee
+		SccLocalPath3 = ByRupee
+		SccProjectUniqueName4 = Cadastro.BO\\Cadastro.BO.csproj
+		SccProjectTopLevelParentUniqueName4 = Grupo5.sln
+		SccProjectName4 = Cadastro.BO
+		SccLocalPath4 = Cadastro.BO
+		SccProjectUniqueName5 = Cadastro.Dominio\\Cadastro.Dominio.csproj
+		SccProjectName5 = Cadastro.Dominio
+		SccLocalPath5 = Cadastro.Dominio
+		SccProjectUniqueName6 = Cadastro.ORM\\Cadastro.ORM.csproj
+		SccProjectName6 = Cadastro.ORM
+		SccLocalPath6 = Cadastro.ORM
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0B69384-6B6E-462B-A91A-C709A6617EF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B69384-6B6E-462B-A91A-C709A6617EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B69384-6B6E-462B-A91A-C709A6617EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B69384-6B6E-462B-A91A-C709A6617EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B434D2A-CD67-4A40-9754-1CBE441FC562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B434D2A-CD67-4A40-9754-1CBE441FC562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B434D2A-CD67-4A40-9754-1CBE441FC562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B434D2A-CD67-4A40-9754-1CBE441FC562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04FD3D01-D02E-4167-B2CC-2A96E776A21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04FD3D01-D02E-4167-B2CC-2A96E776A21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04FD3D01-D02E-4167-B2CC-2A96E776A21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04FD3D01-D02E-4167-B2CC-2A96E776A21D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CFA8053-7014-4089-BC68-97606B290107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CFA8053-7014-4089-BC68-97606B290107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CFA8053-7014-4089-BC68-97606B290107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CFA8053-7014-4089-BC68-97606B290107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DA85E4D-5BFB-4452-945B-5B41B7EF2A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA85E4D-5BFB-4452-945B-5B41B7EF2A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA85E4D-5BFB-4452-945B-5B41B7EF2A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA85E4D-5BFB-4452-945B-5B41B7EF2A82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69BCC84-8A3C-4713-8BB0-1E077D5539BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69BCC84-8A3C-4713-8BB0-1E077D5539BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69BCC84-8A3C-4713-8BB0-1E077D5539BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69BCC84-8A3C-4713-8BB0-1E077D5539BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5DA85E4D-5BFB-4452-945B-5B41B7EF2A82} = {99D43C1D-5774-40AD-8131-EBD27829B44F}
+		{E69BCC84-8A3C-4713-8BB0-1E077D5539BC} = {1BCABBF6-96D8-4E96-92A1-B89A6A90AF38}
+	EndGlobalSection
+EndGlobal

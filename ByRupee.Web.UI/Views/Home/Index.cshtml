@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    <style type="text/css">
+        body {
+            background-color: #e6e6e6;
+        }
+
+        .jumbotron {
+            background-image: url(Imagens/Fotos/background-8-1160x480.jpg);
+        }
+
+        #FotoLogo {
+            width: 250px;
+            height: 150px;
+        }
+    </style>
+}
+
+
+<div class="jumbotron">
+    <h4><img id="FotoLogo" src="~/Imagens/Fotos/cart_empty.png" /></h4>
+    <p class="lead">Sistema de controle de Despensa Pessoal</p>
+    <p><a href="~/SobreSistema" class="btn btn-success btn-lg">Sobre o Sistema &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2 id="h2Grafico">Relatórios </h2>
+        <br />
+        <p>
+            <img id="imgGrafico" src="~/Imagens/Fotos/IconeRelatorio.fw.png">
+        </p>
+        <p><a class="btn btn-danger" id="btnGraficos" href="~/Graficos/">Acessar &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Ultimas Compras</h2>
+        <br />
+        <img id="imgCesta" src="~/Imagens/Fotos/iconCesta.png">
+        <p><a class="btn btn-primary" id="btnRalatorioCompra" href="~/Relatorio">Acessar &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Ultimos Produtos</h2>
+        <br />
+        <img id="imgSacola" src="~/Imagens/Fotos/iconSacola.png" />
+        <p><a class="btn btn-warning" id="btnRalatorioProduto" href="~/RelatorioProdutos">Acessar &raquo;</a></p>
+    </div>
+</div>

@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Sistema ByRupee</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Scripts/Highcharts-4.0.1/js/highcharts.js"></script>
+    <script type="text/javascript" src="~/Scripts/Highcharts-4.0.1/js/modules/exporting.js"></script>
+    <style type="text/css">
+        body {
+            background-color: #e6e6e6;
+        }
+
+        .jumbotron {
+            background-image: url(Imagens/Fotos/background-8-1160x480.jpg);
+        }
+
+        #FotoLogo {
+            width: 270px;
+            height: 150px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/">
+                    <img alt="Brand" src="~/Imagens/Fotos/icone-pequeno.fw.png">
+                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+              @*  @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" }) *@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Lojas", "Index", "Lojas")</li>
+                    <li>@Html.ActionLink("Compras", "Index", "Compras")</li>
+                    <li>@Html.ActionLink("Produtos", "Index", "Produtoes")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year <strong>- ByRupee grupo n° 05</strong></p>
+        </footer>
+    </div>
+    <script src="~/Scripts/Utius.js"></script>
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+
+    $(document).ready(function () {
+
+
+        $('#accordionGraficos').collapse({ hide: true, toggle: false })
+        //Validando campo Endereço
+        $("#Endereco").on("blur", function () {
+
+            console.log("evento teste");
+
+
+            var valida = {
+                url: "/Lojas/ValidaNome/",
+                method: "GET",
+                data: { endereco: $("#Endereco").val() },
+                dataType: "Json",
+                contentType: "application/Json; charset=utf-8"
+            };
+            var request = $.ajax(valida);
+
+            request.done(function (data) {
+                if (data.Id > 0) {
+                    //$("#Endereco").focus(); - Para tirar o focus no Campo Nome!!!!
+                    $('.form-group').find("input[type=submit]").prop("disabled", false);
+                }
+                else {
+
+                    alert("Este endereço já existe!");
+                    $(".form-group").find("input[type=submit]").prop("disabled", true);
+                }
+            });
+
+
+        });
+
+    });
+
+
+
+    //Valida Nome da Compra
+    $(document).ready(function () {
+
+        $("#NomeCompra").on("blur", function () {
+
+            var valida = {
+                url: "/Compras/ValidaNomeCompra/",
+                method: "GET",
+                data: { nome: $(this).val() },
+                dataType: "Json",
+                contentType: "application/Json; charset=utf-8"
+            };
+
+            var request = $.ajax(valida);
+
+            request.done(function (data) {
+                if (data.Id > 0) {
+                    $('.form-group').find("input[type=submit]").prop("disabled", false);
+                }
+                else {
+                    alert("Este Nome já existe!");
+                    $('.form-group').find("input[type=submit]").prop("disabled", true);
+                }
+            });
+
+        });
+    });
+
+
+
+    //Validação para quantidade de produto quando produto tiver apenas 1 item.
+    $(document).ready(function () {
+
+
+        var params = {
+            url: "/Produtoes/ValidaQuantidade",
+            method: "GET",
+            dataType: "Json"
+        };
+
+        var request = $.ajax(params);
+
+        request.done(function (data) {
+
+            $("#myModal").modal({
+
+            });
+
+        });
+
+
+
+    });
+
+
+    ///Teste Modal Lista de Compra
+    //$(document).ready(function () {
+    //    $("#btnListaDeCompra").on("click", function () {
+    //        $("#ModalCompra").modal({
+
+    //        });
+    //    });
+    //});
+
+
+
+
+    ///Função para trazer Municipios e Estados
+    $("#btnEnviar").on("click", function () { });
+
+    $("#Estados").on("change", function () {
+
+        var params = {
+            url: "/app/municipiosAjax/" + $(this).val(),
+            method: "GET",
+            dataType: "Json",
+            contentType: "application/Json; charset=utf-8"
+        };
+
+        var request = $.ajax(params);
+        var municipios = $("#municipios");
+        municipios.append("<option value=''>Carregando...</option>")
+
+        request.done(function (data) {
+
+            municipios.html("");
+
+            municipios.prop("disabled", false);
+
+            $.each(data.data, function (i, item) {
+                var nome = item.Nome;
+
+                municipios.append("<option value='" + item.Id + "'>" + item.Nome + "</option>")
+            });
+        });
+
+        request.fail(function (data) {
+            debugger;
+        });
+
+        municipios.append("<option value='2'>São Paulo</option>")
+
+    });
+
+
+
+    //  $(document).ready(function () {
+    //    $("#btnEnviar").click(function () {
+    //        var teste = { "Nome": "Yoshida", "Idade": "25" };
+
+    //        var categoria = { "Id": 1, "Descrição": "Estudo" };
+
+    //        var params = {
+    //            url: "/Lojas/RetornaAjax",
+    //            method: "GET",
+    //            data: {param: "Sabão"},
+    //            dataType: "Json"
+    //        };
+
+    //        var request = $.ajax(params);
+
+    //        request.done(function (data) {
+
+    //            var message = data.Parametro;
+    //            alert(message);
+
+    //        });
+
+    //        request.fail(function (data) {
+    //            alert("Falha na Solicitação!");
+    //        });
+    //  });
+    //});
+
+
+
+    </script>
+
+
+
+    @RenderSection("scripts", required: false)
+
+    
+</body>
+</html>

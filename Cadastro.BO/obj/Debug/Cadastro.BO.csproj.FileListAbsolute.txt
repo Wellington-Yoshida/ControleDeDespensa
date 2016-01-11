@@ -1,0 +1,15 @@
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\bin\Debug\Cadastro.BO.dll.config
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\bin\Debug\Cadastro.BO.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\bin\Debug\Cadastro.BO.pdb
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\bin\Debug\Cadastro.Dominio.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\bin\Debug\Cadastro.ORM.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\bin\Debug\DotNet.Highcharts.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\bin\Debug\Cadastro.Dominio.pdb
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\bin\Debug\Cadastro.ORM.pdb
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\obj\Debug\Cadastro.BO.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\obj\Debug\Cadastro.BO.dll
+C:\Users\Administrador\Desktop\traineeByRupee\Grupo5\Cadastro.BO\obj\Debug\Cadastro.BO.pdb
